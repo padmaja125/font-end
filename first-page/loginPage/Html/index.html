@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .contactform{
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            background-color: rgba(233, 22, 22, 0.897);
+        }
+        form input, textarea{
+            margin-left:20px;
+            margin-bottom: 10px;
+            width: 80%;
+            height: 30px;
+            font-weight: bold; 
+            background-color: rgb(112, 38, 19);
+            color: white;
+        }
+        input::placeholder {
+            color: white;
+      }
+        form textarea{
+            height: 100px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+        h1, h6, h3{
+            color: white;
+            margin: 0px;
+        }
+        h6{
+            margin-bottom: 6px;
+        }
+        textarea::placeholder{
+            color: white;
+        }
+        body{
+            background-color: rgb(48, 47, 47);
+        }
+        select{
+            width: 81%;
+            margin-left:20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: rgb(112, 38, 19);
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="contactform" id="contactform" >
+		<div class="page-header" style="text-align: center;">
+                    <h3 style="font-weight: bold; ">X</h3>
+					<h1>Get in touch<br>
+                    <h6>Good choice...</h6></h1>
+				</div>
+			<form action="/action_page.php"> 
+                <input id="yourname" name="yourname" placeholder="Your name please " type="text"> <br> 
+                <input id="email" name="email" placeholder="Contact email" type="text"> <br>
+                    <select id="project" name="project" placeholder="About your new Project?">
+                        <option value=""> About your new Project?</option>
+                        <option value="java" >Java</option>
+                        <option value="Sql" >Sql</option>
+                    </select><br>
+     			 <textarea id="message" style="height: 100px;" name="message" placeholder="How Can I help?" tabindex="5" required></textarea><br>
+
+				</select> <input type="submit" style="background-color: floralwhite; height: 75px; color: rgb(228, 26, 26);" value="Send Message">
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
